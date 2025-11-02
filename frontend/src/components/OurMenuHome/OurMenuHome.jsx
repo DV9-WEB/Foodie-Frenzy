@@ -15,7 +15,7 @@ const OurMenuHome = () => {
   const cartItems = rawCart.filter(ci => ci.item);
 
   useEffect(() => {
-    axios.get('https://foodiefrenzy-backend-aeqo.onrender.com/api/items')
+    axios.get('https://foodie-frenzy-backend.onrender.com/api/items')
       .then(res => {
         const grouped = res.data.reduce((acc, item) => {
           acc[item.category] = acc[item.category] || [];

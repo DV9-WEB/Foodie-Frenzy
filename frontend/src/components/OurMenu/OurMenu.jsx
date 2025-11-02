@@ -16,7 +16,7 @@ const OurMenu = () => {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
-        const res = await axios.get('https://foodiefrenzy-backend-aeqo.onrender.com/api/items');
+        const res = await axios.get('https://foodie-frenzy-backend.onrender.com/api/items');
         const byCategory = res.data.reduce((acc, item) => {
           const cat = item.category || 'Uncategorized';
           acc[cat] = acc[cat] || [];

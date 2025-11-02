@@ -13,7 +13,7 @@ const Orders = () => {
     const fetchOrders = async () => {
       try {
         const response = await axios.get(
-          "https://foodiefrenzy-backend-aeqo.onrender.com/api/orders/getall",
+          "https://foodie-frenzy-backend.onrender.com/api/orders/getall",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -47,7 +47,7 @@ const Orders = () => {
   const handleStatusChange = async (orderId, newStatus) => {
     try {
       await axios.put(
-        `https://foodiefrenzy-backend-aeqo.onrender.com/api/orders/getall/${orderId}`,
+        `https://foodie-frenzy-backend.onrender.com/api/orders/getall/${orderId}`,
         { status: newStatus }
       );
       setOrders(orders.map(o => o._id === orderId ? { ...o, status: newStatus } : o));
@@ -132,7 +132,7 @@ const Orders = () => {
                                 className="flex items-center gap-3 p-2 rounded-lg"
                               >
                                 <img
-                                  src={`https://foodiefrenzy-backend-aeqo.onrender.com${itm.item.imageUrl}`}
+                                  src={`https://foodie-frenzy-backend.onrender.com${itm.item.imageUrl}`}
                                   alt={itm.item.name}
                                   className="w-10 h-10 object-cover rounded-lg"
                                 />

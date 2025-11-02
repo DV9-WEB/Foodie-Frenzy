@@ -17,7 +17,7 @@ const SpecialOffer = () => {
   // Fetch menu items
   useEffect(() => {
     axios
-      .get('https://foodiefrenzy-backend-aeqo.onrender.com/api/items')
+      .get('https://foodie-frenzy-backend.onrender.com/api/items')
       .then(res => setItems(res.data.items ?? res.data))
       .catch(err => console.error(err));
   }, []);

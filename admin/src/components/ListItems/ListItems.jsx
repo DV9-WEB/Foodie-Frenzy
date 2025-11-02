@@ -14,7 +14,7 @@ const ListItems = () => {
     const fetchItems = async () => {
       try {
         const { data } = await axios.get(
-          "https://foodiefrenzy-backend-aeqo.onrender.com/api/items"
+          "https://foodie-frenzy-backend.onrender.com/api/items"
         );
         setItems(data);
       } catch (err) {
@@ -31,7 +31,7 @@ const ListItems = () => {
     if (!window.confirm('Are you sure you want to delete this item?')) return;
     try {
       await axios.delete(
-        `https://foodiefrenzy-backend-aeqo.onrender.com/api/items/${itemId}`
+        `https://foodie-frenzy-backend.onrender.com/api/items/${itemId}`
       );
       setItems(prev => prev.filter(item => item._id !== itemId));
       console.log('Deleted item ID:', itemId);

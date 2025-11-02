@@ -54,7 +54,7 @@ const AddItems = () => {
         payload.append(key, val);
       });
       const res = await axios.post(
-        "https://foodiefrenzy-backend-aeqo.onrender.com/api/items",
+        "https://foodie-frenzy-backend.onrender.com/api/items",
         payload,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

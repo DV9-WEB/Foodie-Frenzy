@@ -32,7 +32,7 @@ const VerifyPaymentPage = () => {
         // Stripe says success=true & we have a session_id:
         axios
           .get(
-            "https://foodiefrenzy-backend-aeqo.onrender.com/api/orders/confirm",
+            "https://foodie-frenzy-backend.onrender.com/api/orders/confirm",
             {
               params: { session_id },
               headers: authHeaders,
