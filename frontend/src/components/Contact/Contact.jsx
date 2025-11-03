@@ -76,7 +76,7 @@ const Contact = () => {
                 <h3 className="ml-4 text-amber-100 text-xl font-semibold">Our Headquarter</h3>
               </div>
               <div className="pl-12 relative z-10">
-                <p className="text-amber-100 font-light text-lg">529 Triveni Nagar Lucknow, UP 226020</p>
+                <p className="text-amber-100 font-light text-lg">Indore, India</p>
               </div>
             </div>
             <div className="relative bg-white/5 backdrop-blur-lg rounded-2xl p-6 shadow-2xl transform transition-all duration-300 hover:scale-[1.02] animate-card-float-delayed border-l-4 border-green-500 hover:border-green-400 group">
@@ -90,7 +90,7 @@ const Contact = () => {
               <div className="pl-12 space-y-2 relative z-10">
                 <div className="flex items-center text-amber-100 font-light">
                   <FiGlobe className="text-green-400 text-xl mr-2" />
-                  +91 8299431275
+                  +91 9516274854
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@ const Contact = () => {
               </div>
               <div className="pl-12 relative z-10">
                 <p className="text-amber-100 font-semibold text-base sm:text-lg break-words">
-                  hexagonsservices@gmail.com
+                  deepanshuverma.work@gmail.com
                 </p>
               </div>
             </div>
